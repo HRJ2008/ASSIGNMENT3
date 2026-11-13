@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harsh Raj Jha - B.Tech CSE student at KR Mangalam University. Responsive portfolio (Web Dev I Lab 3)">
+  <title>Harsh Raj Jha | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- ========== HEADER (Flexbox) ========== -->
+  <header class="header">
+    <a href="#top" class="logo">My Portfolio</a>
+
+    <!-- CSS-only hamburger menu for mobile (no JavaScript) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+    <label for="menu-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO (Flexbox) ========== -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="greeting">Harsh Raj Jha &ndash; B.Tech CSE Student</p>
+        <h1>Hi, I am</h1>
+        <h1 class="role">Full Stack Developer</h1>
+        <p class="tagline">Learning HTML, CSS and JavaScript to build modern web applications with MERN stack.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Hire Me</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="https://i.ibb.co/qYcQHhzN/pancardresizer-com-1785986413190.jpg" alt="Harsh Raj Jha's profile photo">
+      </div>
+    </section>
+
+    <!-- ========== ABOUT (Grid: text + quick facts) ========== -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>
+          Hello! My name is Harsh Raj Jha, and I am from South Delhi. I am
+          a first-year B.Tech CSE (Core) student at KR Mangalam University.
+          My web development sir has just started teaching us HTML, CSS and
+          JavaScript, and this is my first portfolio website where I show what
+          I am learning. I love exploring new skills every day, and I am
+          building simple projects to practise what I learn in class. With a
+          hardworking and consistent mindset, I am determined to grow as a
+          developer and build creative projects that make a real impact.
+        </p>
+        <ul class="facts">
+          <li><strong>B.Tech CSE (Core)</strong><span>KR Mangalam University</span></li>
+          <li><strong>South Delhi</strong><span>My home</span></li>
+          <li><strong>HTML, CSS, JS</strong><span>Learning now</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS (Grid) ========== -->
+    <section id="skills" class="section">
+      <h2>My Skills</h2>
+      <div class="grid skills-grid">
+        <article class="card skill-card">
+          <h3>HTML</h3><span>Just started</span>
+          <div class="bar"><i style="--level:55%"></i></div>
+        </article>
+        <article class="card skill-card">
+          <h3>CSS</h3><span>Just started</span>
+          <div class="bar"><i style="--level:45%"></i></div>
+        </article>
+        <article class="card skill-card">
+          <h3>JavaScript</h3><span>Just started</span>
+          <div class="bar"><i style="--level:20%"></i></div>
+        </article>
+        <article class="card skill-card">
+          <h3>Git &amp; GitHub</h3><span>Beginner</span>
+          <div class="bar"><i style="--level:35%"></i></div>
+        </article>
+        <article class="card skill-card">
+          <h3>Flexbox &amp; Grid</h3><span>Learning</span>
+          <div class="bar"><i style="--level:40%"></i></div>
+        </article>
+        <article class="card skill-card">
+          <h3>Responsive Design</h3><span>Learning</span>
+          <div class="bar"><i style="--level:40%"></i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS (Grid) ========== -->
+    <section id="projects" class="section">
+      <h2>My Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card project-card">
+          <h3>Personal Intro Page</h3>
+          <p>A simple HTML page about me with headings, paragraphs, images and links.</p>
+          <ul class="tags"><li>HTML</li></ul>
+        </article>
+        <article class="card project-card">
+          <h3>Student Profile Card</h3>
+          <p>A styled profile card with colors, borders and hover effects.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        </article>
+        <article class="card project-card">
+          <h3>Responsive Landing Page</h3>
+          <p>A one-page layout using Flexbox, Grid and media queries.</p>
+          <ul class="tags"><li>Flexbox</li><li>Grid</li></ul>
+        </article>
+        <article class="card project-card">
+          <h3>Mini Calculator</h3>
+          <p>A basic calculator with buttons for add, subtract, multiply and divide.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER (Flexbox) ========== -->
+  <footer class="footer">
+    <p>&copy; 2026 Harsh Raj Jha. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+  <a href="#top" class="btn back-top">&uarr; Back to Top</a>
+
+</body>
+</html>
